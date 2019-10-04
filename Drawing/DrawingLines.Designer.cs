@@ -34,9 +34,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.ClientSize = new System.Drawing.Size(586, 443);
             this.Name = "DrawingLines";
             this.Text = "Drawing Lines";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DrawingLines_MouseDown);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.DrawingLines_MouseUp);
             this.ResumeLayout(false);
 
         }
