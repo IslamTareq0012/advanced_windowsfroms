@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DrawingLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingLines.Designer.cs">
+      <DependentUpon>DrawingLines.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rectangles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DrawingLines.resx">
+      <DependentUpon>DrawingLines.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rectangles.resx">
       <DependentUpon>Rectangles.cs</DependentUpon>
     </EmbeddedResource>
